@@ -2,13 +2,13 @@ pipeline {
     agent any
     tools {
         maven 'maven'
-        jdk 'jdk11'
+        //jdk 'jdk11'
     }
     stages {
         stage("Tools initialization") {
             steps {
                 sh "mvn --version"
-                sh "java -version"
+               // sh "java -version"
             }
         }
         stage("Checkout Code") {
